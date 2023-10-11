@@ -1,11 +1,11 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { HometNavigator } from "./AccountNavigator";
+import { HomeNavigator } from "./HomeNavigator";
 
 export const Navigation = () => {
     return (
         <NavigationContainer>
-            <HometNavigator />
+            <HomeNavigator />
         </NavigationContainer>
     )
 }

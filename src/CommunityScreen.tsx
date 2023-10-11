@@ -3,10 +3,10 @@ import { StatusBar } from "expo-status-bar";
 import { Text, View } from "react-native";
 import { styles } from "./styles";
 
-export const HomeScreen = () => {
+export const CommunityScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>TIME IS ALL WE HAVE</Text>
+      <Text style={styles.text}>COMMUNITY SCREEN</Text>
       <StatusBar style="auto" />
     </View>
   );
