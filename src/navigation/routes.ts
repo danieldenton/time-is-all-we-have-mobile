@@ -1,6 +1,7 @@
 import { IRouteProps } from "./RouteProps";
 import { HomeScreen } from "../HomeScreen";
 import { CommunityScreen } from "../CommunityScreen";
+import 'react-native-gesture-handler'
 
 export const routes: IRouteProps[] = [
     {
