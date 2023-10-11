@@ -2,12 +2,12 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeScreen } from "../HomeScreen";
 
-const AccountStack = createNativeStackNavigator();
+const HomeStack = createNativeStackNavigator();
 
-export const AccountNavigator = () => {
+export const HometNavigator = () => {
   return (
-    <AccountStack.Navigator>
-      <AccountStack.Screen name="HomeScreen" component={HomeScreen} />
-    </AccountStack.Navigator>
+    <HomeStack.Navigator>
+      <HomeStack.Screen name="HomeScreen" component={HomeScreen} />
+    </HomeStack.Navigator>
   );
 };
