@@ -1,15 +1,15 @@
-import React from "react";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { HomeScreen } from "../HomeScreen";
-import { CommunityScreen } from "../CommunityScreen";
+// import React from "react";
 
-const HomeStack = createNativeStackNavigator();
+// import { HomeScreen } from "../HomeScreen";
+// import { CommunityScreen } from "../CommunityScreen";
 
-export const HomeNavigator = () => {
-  return (
-    <HomeStack.Navigator>
-      <HomeStack.Screen name="HomeScreen" component={HomeScreen} />
-      <HomeStack.Screen name="CommunityScreen" component={CommunityScreen} />
-    </HomeStack.Navigator>
-  );
-};
+// const HomeStack = createNativeStackNavigator();
+
+// export const HomeNavigator = () => {
+//   return (
+//     <HomeStack.Navigator>
+//       <HomeStack.Screen name="HomeScreen" component={HomeScreen} />
+//       <HomeStack.Screen name="CommunityScreen" component={CommunityScreen} />
+//     </HomeStack.Navigator>
+//   );
+// };
