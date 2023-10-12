@@ -1,40 +1,34 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
-import { Text, View, Button } from "react-native";
+import { Text, View, Pressable } from "react-native";
 import { IStackScreenProps } from "../navigation/StackScreenProps";
+import { routes } from "../navigation/routes";
 import { styles } from "../styles";
 
 export const CommunityScreen: React.FunctionComponent<IStackScreenProps> = (
   props
 ) => {
-  const { navigation, route } = props;
+  const { navigation } = props;
+
+  const navNames = routes.filter((r) => r.name !== "Community");
+
+  const navButtons = navNames.map((r, i) => {
+    return (
+      <Pressable
+        key={i}
+        onPress={() => {
+          navigation.navigate(r.name);
+        }}
+      >
+        <Text>{r.name}</Text>
+      </Pressable>
+    );
+  });
+
   return (
     <View style={styles.container}>
       <Text style={styles.text}>COMMUNITY SCREEN</Text>
-      <Button
-        title="Home"
-        onPress={() => {
-          navigation.navigate("Home");
-        }}
-      />
-      <Button
-        title="Meditaion"
-        onPress={() => {
-          navigation.navigate("Meditation");
-        }}
-      />
-      <Button
-        title="About"
-        onPress={() => {
-          navigation.navigate("About");
-        }}
-      />
-      <Button
-        title="Contact"
-        onPress={() => {
-          navigation.navigate("Contact");
-        }}
-      />
+      {navButtons}
       <StatusBar style="auto" />
     </View>
   );
