@@ -15,7 +15,7 @@ export const routes: IRouteProps[] = [
         component: CommunityScreen
     },
     {
-        name: "Meditaion",
+        name: "Meditation",
         component: MeditationScreen
     },
     {
