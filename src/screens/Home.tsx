@@ -1,8 +1,8 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { Text, View, Button } from "react-native";
-import { styles } from "./styles";
-import { IStackScreenProps } from "./navigation/StackScreenProps";
+import { styles } from "../styles";
+import { IStackScreenProps } from "../navigation/StackScreenProps";
 
 export const HomeScreen: React.FunctionComponent<IStackScreenProps> = props => {
   const { navigation, route } = props

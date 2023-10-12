@@ -1,6 +1,6 @@
 import { IRouteProps } from "./RouteProps";
-import { HomeScreen } from "../HomeScreen";
-import { CommunityScreen } from "../CommunityScreen";
+import { HomeScreen } from "../screens/HomeScreen";
+import { CommunityScreen } from "../screens/CommunityScreen";
 
 export const routes: IRouteProps[] = [
     {
