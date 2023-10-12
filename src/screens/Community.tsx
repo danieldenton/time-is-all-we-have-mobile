@@ -12,25 +12,25 @@ export const CommunityScreen: React.FunctionComponent<IStackScreenProps> = (
     <View style={styles.container}>
       <Text style={styles.text}>COMMUNITY SCREEN</Text>
       <Button
-        title="MEDITATE"
+        title="Home"
         onPress={() => {
           navigation.navigate("Home");
         }}
       />
       <Button
-        title="MEDITATE"
+        title="Meditaion"
         onPress={() => {
           navigation.navigate("Meditation");
         }}
       />
       <Button
-        title="MEDITATE"
+        title="About"
         onPress={() => {
           navigation.navigate("About");
         }}
       />
       <Button
-        title="MEDITATE"
+        title="Contact"
         onPress={() => {
           navigation.navigate("Contact");
         }}
