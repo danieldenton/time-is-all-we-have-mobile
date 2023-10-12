@@ -9,7 +9,18 @@ export const HomeScreen: React.FunctionComponent<IStackScreenProps> = props => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>TIME IS ALL WE HAVE</Text>
-      <Button title="ENTER" />
+      <Button title="MEDITATE" onPress={(() => {
+        navigation.navigate("Meditation")
+      })} />
+      <Button title="MEDITATE" onPress={(() => {
+        navigation.navigate("Community")
+      })} />
+      <Button title="MEDITATE" onPress={(() => {
+        navigation.navigate("About")
+      })} />
+      <Button title="MEDITATE" onPress={(() => {
+        navigation.navigate("Contact")
+      })} />
       <StatusBar style="auto" />
     </View>
   );
