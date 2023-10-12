@@ -1,6 +1,9 @@
 import { IRouteProps } from "./RouteProps";
-import { HomeScreen } from "../screens/HomeScreen";
-import { CommunityScreen } from "../screens/CommunityScreen";
+import { HomeScreen } from "../screens/Home";
+import { CommunityScreen } from "../screens/Community";
+import { MeditationScreen } from "../screens/Meditation";
+import { AboutScreen } from "../screens/About";
+import { ContactScreen } from "../screens/Contact";
 
 export const routes: IRouteProps[] = [
     {
@@ -10,5 +13,17 @@ export const routes: IRouteProps[] = [
     {
         name: "Community",
         component: CommunityScreen
+    },
+    {
+        name: "Meditaion",
+        component: MeditationScreen
+    },
+    {
+        name: "About",
+        component: AboutScreen
+    },
+    {
+        name: "Contact",
+        component: ContactScreen
     }
 ]
