@@ -2,7 +2,6 @@ import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { Text, View, Pressable } from "react-native";
 import { IStackScreenProps } from "../navigation/StackScreenProps";
-import { routes } from "../navigation/routes";
 import { styles } from "../styles";
 
 export const CommunityScreen: React.FunctionComponent<IStackScreenProps> = (
@@ -10,25 +9,37 @@ export const CommunityScreen: React.FunctionComponent<IStackScreenProps> = (
 ) => {
   const { navigation } = props;
 
-  const navNames = routes.filter((r) => r.name !== "Community");
-
-  const navButtons = navNames.map((r, i) => {
-    return (
-      <Pressable
-        key={i}
-        onPress={() => {
-          navigation.navigate(r.name);
-        }}
-      >
-        <Text>{r.name}</Text>
-      </Pressable>
-    );
-  });
-
   return (
     <View style={styles.container}>
       <Text style={styles.text}>COMMUNITY SCREEN</Text>
-      {navButtons}
+      <Pressable
+        onPress={() => {
+          navigation.navigate("Home");
+        }}
+      >
+        <Text>HOME</Text>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          navigation.navigate("Meditation");
+        }}
+      >
+        <Text>MEDITATION</Text>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          navigation.navigate("Contact");
+        }}
+      >
+        <Text>CONTACT</Text>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          navigation.navigate("About");
+        }}
+      >
+        <Text>ABOUT</Text>
+      </Pressable>
       <StatusBar style="auto" />
     </View>
   );

@@ -35,10 +35,10 @@ export const HomeScreen: React.FunctionComponent<IStackScreenProps> = (
       </Pressable>
       <Pressable
         onPress={() => {
-          navigation.navigate("Contact");
+          navigation.navigate("About");
         }}
       >
-        <Text>CONTACT</Text>
+        <Text>ABOUT</Text>
       </Pressable>
       <StatusBar style="auto" />
     </View>

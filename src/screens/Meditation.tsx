@@ -2,7 +2,6 @@ import React from "react";
 import { View, Text, Pressable } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { IStackScreenProps } from "../navigation/StackScreenProps";
-import { routes } from "../navigation/routes";
 import { styles } from "../styles";
 
 export const MeditationScreen: React.FunctionComponent<IStackScreenProps> = (
@@ -10,25 +9,37 @@ export const MeditationScreen: React.FunctionComponent<IStackScreenProps> = (
 ) => {
   const { navigation } = props;
 
-  const navNames = routes.filter((r) => r.name !== "Meditation");
-
-  const navButtons = navNames.map((r, i) => {
-    return (
-      <Pressable
-        key={i}
-        onPress={() => {
-          navigation.navigate(r.name);
-        }}
-      >
-        <Text>{r.name}</Text>
-      </Pressable>
-    );
-  });
-
   return (
     <View style={styles.container}>
       <Text style={styles.text}>MEDITATION SCREEN</Text>
-      {navButtons}
+      <Pressable
+        onPress={() => {
+          navigation.navigate("Home");
+        }}
+      >
+        <Text>HOME</Text>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          navigation.navigate("Community");
+        }}
+      >
+        <Text>COMMUNITY</Text>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          navigation.navigate("About");
+        }}
+      >
+        <Text>ABOUT</Text>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          navigation.navigate("Contact");
+        }}
+      >
+        <Text>CONTACT</Text>
+      </Pressable>
       <StatusBar style="auto" />
     </View>
   );
