@@ -13,6 +13,7 @@ export const CommunityScreen: React.FunctionComponent<IStackScreenProps> = (
     <View style={styles.container}>
       <Text style={styles.text}>COMMUNITY SCREEN</Text>
       <Pressable
+        style={{ backgroundColor: "red" }}
         onPress={() => {
           navigation.navigate("Home");
         }}
