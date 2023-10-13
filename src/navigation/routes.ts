@@ -6,24 +6,24 @@ import { AboutScreen } from "../screens/About";
 import { ContactScreen } from "../screens/Contact";
 
 export const routes: IRouteProps[] = [
-  {
-    name: "Home",
-    component: HomeScreen,
-  },
-  {
-    name: "Meditation",
-    component: MeditationScreen,
-  },
-  {
-    name: "Community",
-    component: CommunityScreen,
-  },
-  {
-    name: "About",
-    component: AboutScreen,
-  },
-  {
-    name: "Contact",
-    component: ContactScreen,
-  },
-];
+    {
+        name: "Home",
+        component: HomeScreen
+    },
+    {
+        name: "Community",
+        component: CommunityScreen
+    },
+    {
+        name: "Meditation",
+        component: MeditationScreen
+    },
+    {
+        name: "About",
+        component: AboutScreen
+    },
+    {
+        name: "Contact",
+        component: ContactScreen
+    }
+]
