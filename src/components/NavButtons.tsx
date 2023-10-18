@@ -1,7 +1,5 @@
 import React from "react";
 import { Button } from "react-native";
-import { IStackScreenProps } from "../navigation/StackScreenProps";
-import { IRouteNames } from "../navigation/routeNames";
 
 export const NavButtons: React.FunctionComponent<any> = ({ navigation, names }) => {
 
