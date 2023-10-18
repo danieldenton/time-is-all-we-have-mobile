@@ -16,7 +16,7 @@ export const NavButtons: React.FunctionComponent<IStackScreenProps & any> = ({
         style={styles.buttons}
         key={i}
       >
-        <Text>{name}</Text>
+        <Text style={styles.buttonFont}>{name}</Text>
       </TouchableOpacity>
     );
   });
