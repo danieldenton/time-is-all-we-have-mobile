@@ -12,7 +12,8 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   buttons: {
-    color: "#20232a",
-    fontWeight: "bold",
+    margin: 20,
+    backgroundColor: '#FFA500',
+    borderRadius: 10
   },
 });
