@@ -1,45 +1,22 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
-import { Text, View, Pressable } from "react-native";
+import { Text, View } from "react-native";
 import { IStackScreenProps } from "../navigation/StackScreenProps";
 import { styles } from "../styles";
+import { NavButtons } from "../components/NavButtons";
+import { routeNames } from "../navigation/routeNames";
 
 export const ContactScreen: React.FunctionComponent<IStackScreenProps> = (
   props
 ) => {
   const { navigation } = props;
 
+  const names = routeNames.filter((rn, i) => i !== 4)
+
   return (
     <View style={styles.container}>
       <Text style={styles.text}>CONTACT</Text>
-      <Pressable
-        onPress={() => {
-          navigation.navigate("Home");
-        }}
-      >
-        <Text>HOME</Text>
-      </Pressable>
-      <Pressable
-        onPress={() => {
-          navigation.navigate("Meditation");
-        }}
-      >
-        <Text>MEDITATION</Text>
-      </Pressable>
-      <Pressable
-        onPress={() => {
-          navigation.navigate("Community");
-        }}
-      >
-        <Text>COMMUNITY</Text>
-      </Pressable>
-      <Pressable
-        onPress={() => {
-          navigation.navigate("About");
-        }}
-      >
-        <Text>ABOUT</Text>
-      </Pressable>
+      <NavButtons navigation={navigation} names={names} />
       <StatusBar style="auto" />
     </View>
   );

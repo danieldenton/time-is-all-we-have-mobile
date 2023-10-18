@@ -6,3 +6,5 @@ export interface IStackScreenProps {
   navigation: NativeStackNavigationProp<any>;
   route: RouteProp<ParamListBase, any>;
 }
+
+
