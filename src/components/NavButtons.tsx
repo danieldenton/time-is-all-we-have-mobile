@@ -6,11 +6,14 @@ export const NavButtons = (props: {
   navigation: { navigate: (name: string) => void };
   names: string[];
 }) => {
-  const navButtons = props.names.map((name: string, i: number) => {
+
+  const { navigation, names } = props
+  
+  const navButtons = names.map((name: string, i: number) => {
     return (
       <TouchableOpacity
         onPress={() => {
-          props.navigation.navigate(name);
+          navigation.navigate(name);
         }}
         style={styles.buttons}
         key={i}
