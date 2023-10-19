@@ -2,13 +2,12 @@ import React from "react";
 import { TouchableOpacity, Text } from "react-native";
 import { styles } from "../styles";
 
-export const NavButtons = ({
-  navigation,
-  names,
-}: {
+type NavButtonProps = {
   navigation: { navigate: (name: string) => void };
   names: string[];
-}) => {
+};
+
+export const NavButtons = ({ navigation, names }: NavButtonProps) => {
   const navButtons = names.map((name: string, i: number) => {
     return (
       <TouchableOpacity
