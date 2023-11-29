@@ -3,7 +3,7 @@ import { View, Text, TextInput } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { IStackScreenProps } from "../navigation/StackScreenProps";
 import { styles } from "../styles";
-import { NavButtons } from "../components/NavButtons";
+import { NavButtons } from "../components/navbar/NavButtons";
 import { routeNames } from "../navigation/routeNames";
 
 export const MeditationScreen: React.FunctionComponent<IStackScreenProps> = (
