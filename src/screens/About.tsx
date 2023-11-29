@@ -9,7 +9,7 @@ export const AboutScreen = ({ navigation }: StackScreenProps) => {
   return (
     <View style={styles.container}>
       <NavBar navigation={navigation} routeIndex={3} />
-      <Text style={styles.text}>ABOUT</Text>
+      <Text style={styles.textHeader}>ABOUT</Text>
       <StatusBar style="auto" />
     </View>
   );

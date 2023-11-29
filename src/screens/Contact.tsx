@@ -10,6 +10,7 @@ export const ContactScreen = ({ navigation }: StackScreenProps) => {
     <View style={styles.container}>
       <NavBar navigation={navigation} routeIndex={4} />
       <Text style={styles.textHeader}>Daniel Denton</Text>
+      <Text style={styles.textSubHeader}>Software Developer</Text>
       <Text style={styles.text}>DanielMDenton@gmail.com</Text>
       <Text style={styles.text}>+1 (323) 363-3279</Text>
       <TouchableOpacity

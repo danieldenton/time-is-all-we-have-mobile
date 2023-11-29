@@ -10,7 +10,7 @@ export const CommunityScreen = ({ navigation }: StackScreenProps) => {
   return (
     <View style={styles.container}>
       <NavBar navigation={navigation} routeIndex={1} />
-      <Text style={styles.text}>COMMUNITY SCREEN</Text>
+      <Text style={styles.textHeader}>COMMUNITY SCREEN</Text>
       <StatusBar style="auto" />
     </View>
   );

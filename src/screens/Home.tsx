@@ -10,7 +10,7 @@ export const HomeScreen = ({ navigation} : StackScreenProps) => {
   return (
     <View style={styles.container}>
       <NavBar navigation={navigation} routeIndex={0} />
-      <Text style={styles.text}>TIME IS ALL WE HAVE</Text>
+      <Text style={styles.textHeader}>TIME IS ALL WE HAVE</Text>
       <StatusBar style="auto" />
     </View>
   );

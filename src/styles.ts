@@ -11,10 +11,15 @@ export const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
   },
+  textSubHeader: {
+    color: "#20232a",
+    fontSize: 20,
+    fontWeight: "bold",
+  },
   text: {
     color: "#20232a",
     fontSize: 20,
-    margin: 2
+    margin: 2,
   },
   linkText: {
     color: "#4169E1",

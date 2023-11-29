@@ -9,7 +9,7 @@ export const MeditationScreen = ({ navigation }: StackScreenProps) => {
   return (
     <View style={styles.container}>
       <NavBar navigation={navigation} routeIndex={2} />
-      <Text style={styles.text}>MEDITATION SCREEN</Text>
+      <Text style={styles.textHeader}>MEDITATION SCREEN</Text>
       <StatusBar style="auto" />
     </View>
   );
