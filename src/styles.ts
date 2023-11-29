@@ -12,16 +12,20 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   buttons: {
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     margin: 10,
     height: 40,
     width: 90,
-    backgroundColor: '#FFA500',
-    borderRadius: 10
+    backgroundColor: "#FFA500",
+    borderRadius: 10,
   },
   buttonFont: {
-    fontWeight: 'bold'
-  }
+    fontWeight: "bold",
+  },
+  navButtonContainer: {
+    flexDirection: "row", 
+    alignItems: "center", 
+    flexWrap: "wrap",
+  },
 });
-

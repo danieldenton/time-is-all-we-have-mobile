@@ -11,12 +11,12 @@ export const CommunityScreen: React.FunctionComponent<IStackScreenProps> = (
 ) => {
   const { navigation } = props;
 
-  const names = routeNames.filter((rn, i) => i !== 2)
+  const names = routeNames.filter((rn, i) => i !== 2);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>COMMUNITY SCREEN</Text>
       <NavButtons navigation={navigation} names={names} />
+      <Text style={styles.text}>COMMUNITY SCREEN</Text>
       <StatusBar style="auto" />
     </View>
   );

@@ -15,8 +15,8 @@ const names = routeNames.filter((rn, i) => i !== 0)
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>TIME IS ALL WE HAVE</Text>
       <NavButtons navigation={navigation} names={names}/>
+      <Text style={styles.text}>TIME IS ALL WE HAVE</Text>
       <StatusBar style="auto" />
     </View>
   );

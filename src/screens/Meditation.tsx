@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, TextInput } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { IStackScreenProps } from "../navigation/StackScreenProps";
 import { styles } from "../styles";
@@ -15,8 +15,8 @@ export const MeditationScreen: React.FunctionComponent<IStackScreenProps> = (
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>MEDITATION SCREEN</Text>
       <NavButtons navigation={navigation} names={names} />
+      <Text style={styles.text}>MEDITATION SCREEN</Text>
       <StatusBar style="auto" />
     </View>
   );

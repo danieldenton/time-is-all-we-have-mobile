@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableOpacity, Text } from "react-native";
+import { TouchableOpacity, Text, View } from "react-native";
 import { styles } from "../styles";
 
 type NavButtonProps = {
@@ -22,5 +22,7 @@ export const NavButtons = ({ navigation, names }: NavButtonProps) => {
     );
   });
 
-  return navButtons;
+  return (
+    <View style={styles.navButtonContainer}>{navButtons}</View>
+  )
 };

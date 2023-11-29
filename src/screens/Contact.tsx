@@ -15,8 +15,8 @@ export const ContactScreen: React.FunctionComponent<IStackScreenProps> = (
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>CONTACT</Text>
       <NavButtons navigation={navigation} names={names} />
+      <Text style={styles.text}>CONTACT</Text>
       <StatusBar style="auto" />
     </View>
   );

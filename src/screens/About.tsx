@@ -15,8 +15,8 @@ export const AboutScreen: React.FunctionComponent<IStackScreenProps> = (
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>ABOUT</Text>
       <NavButtons navigation={navigation} names={names} />
+      <Text style={styles.text}>ABOUT</Text>
       <StatusBar style="auto" />
     </View>
   );
