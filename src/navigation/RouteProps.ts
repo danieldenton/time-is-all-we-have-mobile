@@ -1,7 +1,7 @@
-import React from "react";
-import { IStackScreenProps } from "./StackScreenProps";
+import { FC } from "react";
+import { StackScreenProps } from "./StackScreenProps";
 
-export interface IRouteProps {
-  component: React.FunctionComponent<IStackScreenProps>;
+export type RouteProps = {
+  component: FC<StackScreenProps>
   name: string;
 }

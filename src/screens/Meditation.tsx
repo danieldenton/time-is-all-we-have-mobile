@@ -1,15 +1,11 @@
 import React from "react";
 import { View, Text, TextInput } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { IStackScreenProps } from "../navigation/StackScreenProps";
+import { StackScreenProps } from "../navigation/StackScreenProps";
 import { styles } from "../styles";
 import { NavBar } from "../components/navbar/NavBar";
 
-export const MeditationScreen: React.FunctionComponent<IStackScreenProps> = (
-  props
-) => {
-  const { navigation } = props;
-
+export const MeditationScreen = ({ navigation }: StackScreenProps) => {
   return (
     <View style={styles.container}>
       <NavBar navigation={navigation} routeIndex={2} />

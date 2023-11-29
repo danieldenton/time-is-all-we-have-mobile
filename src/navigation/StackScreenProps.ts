@@ -1,11 +1,8 @@
 import { ParamListBase, RouteProp } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
-export interface IStackScreenProps {
+export type StackScreenProps = {
   nameProps: string;
   navigation: NativeStackNavigationProp<any>;
   route: RouteProp<ParamListBase, any>;
-}
-
-
-
+};

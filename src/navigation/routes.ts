@@ -1,11 +1,11 @@
-import { IRouteProps } from "./RouteProps";
+import { RouteProps } from "./RouteProps";
 import { HomeScreen } from "../screens/Home";
 import { CommunityScreen } from "../screens/Community";
 import { MeditationScreen } from "../screens/Meditation";
 import { AboutScreen } from "../screens/About";
 import { ContactScreen } from "../screens/Contact";
 
-export const routes: IRouteProps[] = [
+export const routes: RouteProps[] = [
     {
         name: "Home",
         component: HomeScreen

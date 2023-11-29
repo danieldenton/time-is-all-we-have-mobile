@@ -5,10 +5,7 @@ import { IStackScreenProps } from "../navigation/StackScreenProps";
 import { styles } from "../styles";
 import { NavBar } from "../components/navbar/NavBar";
 
-export const HomeScreen: React.FunctionComponent<IStackScreenProps> = (
-  props
-) => {
-  const { navigation } = props;
+export const HomeScreen = ({ navigation} : IStackScreenProps) => {
 
   return (
     <View style={styles.container}>

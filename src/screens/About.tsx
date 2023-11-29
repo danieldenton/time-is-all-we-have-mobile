@@ -1,14 +1,11 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { Text, View } from "react-native";
-import { IStackScreenProps } from "../navigation/StackScreenProps";
+import { StackScreenProps } from "../navigation/StackScreenProps";
 import { styles } from "../styles";
 import { NavBar } from "../components/navbar/NavBar";
 
-export const AboutScreen: React.FunctionComponent<IStackScreenProps> = (
-  props
-) => {
-  const { navigation } = props;
+export const AboutScreen = ({ navigation} : StackScreenProps) => {
 
   return (
     <View style={styles.container}>
