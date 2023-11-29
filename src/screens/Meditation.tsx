@@ -3,7 +3,7 @@ import { View, Text, TextInput } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { IStackScreenProps } from "../navigation/StackScreenProps";
 import { styles } from "../styles";
-import { NavButtons } from "../components/navbar/NavButtons";
+import { NavBar } from "../components/navbar/NavBar";
 import { routeNames } from "../navigation/routeNames";
 
 export const MeditationScreen: React.FunctionComponent<IStackScreenProps> = (
@@ -15,7 +15,7 @@ export const MeditationScreen: React.FunctionComponent<IStackScreenProps> = (
 
   return (
     <View style={styles.container}>
-      <NavButtons navigation={navigation} names={names} />
+      <NavBar navigation={navigation} names={names} />
       <Text style={styles.text}>MEDITATION SCREEN</Text>
       <StatusBar style="auto" />
     </View>
