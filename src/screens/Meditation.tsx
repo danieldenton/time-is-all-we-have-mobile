@@ -12,7 +12,7 @@ export const MeditationScreen: React.FunctionComponent<IStackScreenProps> = (
 
   return (
     <View style={styles.container}>
-      <NavBar navigation={navigation} routeIndex={1} />
+      <NavBar navigation={navigation} routeIndex={2} />
       <Text style={styles.text}>MEDITATION SCREEN</Text>
       <StatusBar style="auto" />
     </View>

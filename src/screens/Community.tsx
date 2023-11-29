@@ -12,7 +12,7 @@ export const CommunityScreen: React.FunctionComponent<IStackScreenProps> = (
 
   return (
     <View style={styles.container}>
-      <NavBar navigation={navigation} routeIndex={2} />
+      <NavBar navigation={navigation} routeIndex={1} />
       <Text style={styles.text}>COMMUNITY SCREEN</Text>
       <StatusBar style="auto" />
     </View>
