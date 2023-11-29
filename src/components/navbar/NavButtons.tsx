@@ -2,9 +2,16 @@ import React from "react";
 import { TouchableOpacity, Text } from "react-native";
 import { styles } from "../../styles";
 import { NavButtonProps } from "./NavButtonProps";
+import { routes } from "../../navigation/routes";
 
-export const NavButtons = ({ navigation, names }: NavButtonProps) => {
-  const navButtons = names.map((name: string, i: number) => {
+export const NavButtons = ({ navigation, routeIndex }: NavButtonProps) => {
+  const routeNames: string[] = routes
+    .filter((r, i) => i !== routeIndex)
+    .map((route, i) => {
+      return route.name;
+    });
+
+  const navButtons = routeNames.map((name, i) => {
     return (
       <TouchableOpacity
         onPress={() => {
@@ -18,5 +25,5 @@ export const NavButtons = ({ navigation, names }: NavButtonProps) => {
     );
   });
 
-  return navButtons
+  return navButtons;
 };
