@@ -4,21 +4,28 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
+    
   },
-  text: {
+  textHeader: {
     color: "#20232a",
     fontSize: 30,
     fontWeight: "bold",
   },
+  text: {
+    color: "#20232a",
+    fontSize: 20,
+    margin: 2
+  },
+  linkText: {
+    color: "#4169E1",
+    fontSize: 20,
+    fontWeight: "bold",
+    margin: 2
+  },
   buttons: {
     alignItems: "center",
     justifyContent: "center",
-    margin: 10,
-    height: 40,
-    width: 90,
-    backgroundColor: "#FFA500",
-    borderRadius: 10,
+    margin: 10
   },
   buttonFont: {
     fontWeight: "bold",
@@ -27,5 +34,6 @@ export const styles = StyleSheet.create({
     flexDirection: "row", 
     alignItems: "center", 
     flexWrap: "wrap",
+    marginBottom: 250
   },
 });

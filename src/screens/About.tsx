@@ -5,8 +5,7 @@ import { StackScreenProps } from "../navigation/StackScreenProps";
 import { styles } from "../styles";
 import { NavBar } from "../components/navbar/NavBar";
 
-export const AboutScreen = ({ navigation} : StackScreenProps) => {
-
+export const AboutScreen = ({ navigation }: StackScreenProps) => {
   return (
     <View style={styles.container}>
       <NavBar navigation={navigation} routeIndex={3} />
