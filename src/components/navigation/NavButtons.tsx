@@ -2,12 +2,9 @@ import React from "react";
 import { TouchableOpacity, Text } from "react-native";
 import { styles } from "../../styles";
 import { NavButtonProps } from "./NavButtonProps";
-import { routes } from "../../navigation/routes";
 
-export const NavButtons = ({ navigation, routeIndex }: NavButtonProps) => {
-  const routeNames: string[] = routes
-    .filter((r, i) => i !== routeIndex)
-    .map((route, i) => {
+export const NavButtons = ({ navigation, routes }: NavButtonProps) => {
+  const routeNames = routes.map((route) => {
       return route.name;
     });
 
