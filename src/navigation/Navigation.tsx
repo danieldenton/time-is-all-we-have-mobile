@@ -21,12 +21,14 @@ export const Navigation = () => {
     //   ))}
     // </Stack.Navigator>
     // </NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Meditation" component={MeditationScreen} />
-      <Stack.Screen name="Communnity" component={CommunityScreen} />
-      <Stack.Screen name="About" component={AboutScreen} />
-      <Stack.Screen name="Contact" component={ContactScreen} />
-    </Stack.Navigator>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Meditation" component={MeditationScreen} />
+        <Stack.Screen name="Community" component={CommunityScreen} />
+        <Stack.Screen name="About" component={AboutScreen} />
+        <Stack.Screen name="Contact" component={ContactScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
