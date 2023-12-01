@@ -1,5 +1,5 @@
 import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import { routes } from "./routes";
 import { HomeScreen } from "../screens/Home";
@@ -8,7 +8,7 @@ import { CommunityScreen } from "../screens/Community";
 import { ContactScreen } from "../screens/Contact";
 import { AboutScreen } from "../screens/About";
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export const Navigation = () => {
   return (
