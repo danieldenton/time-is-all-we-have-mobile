@@ -1,10 +1,11 @@
 import { StyleSheet } from "react-native";
+import { android } from "./utils"
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    
+    marginTop: android ? 35 : null
   },
   textHeader: {
     color: "#20232a",

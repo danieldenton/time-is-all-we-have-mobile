@@ -11,12 +11,12 @@ export const routes: RouteProps[] = [
         component: HomeScreen
     },
     {
-        name: "Community",
-        component: CommunityScreen
-    },
-    {
         name: "Meditation",
         component: MeditationScreen
+    },
+    {
+        name: "Community",
+        component: CommunityScreen
     },
     {
         name: "About",

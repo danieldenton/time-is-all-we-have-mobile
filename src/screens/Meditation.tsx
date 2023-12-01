@@ -7,7 +7,7 @@ import { NavBar } from "../components/navigation/NavBar";
 import { routes } from "../navigation/routes";
 
 export const MeditationScreen = ({ navigation }: StackScreenProps) => {
-  const editedRoutes = routes.filter((r, i) => i !== 2);
+  const editedRoutes = routes.filter((r, i) => i !== 1);
   return (
     <View style={styles.container}>
       <NavBar navigation={navigation} routes={editedRoutes} />
