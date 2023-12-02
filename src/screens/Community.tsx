@@ -7,7 +7,7 @@ import { NavBar } from "../components/navigation/NavBar";
 import { routes } from "../navigation/routes";
 
 export const CommunityScreen = ({ navigation }: StackScreenProps) => {
-  const editedRoutes = routes.filter((r, i) => i !== 2);
+  const editedRoutes = routes.filter((r) => r.name === "Community");
 
   return (
     <SafeAreaView style={styles.container}>

@@ -7,7 +7,7 @@ import { NavBar } from "../components/navigation/NavBar";
 import { routes } from "../navigation/routes";
 
 export const HomeScreen = ({ navigation }: StackScreenProps) => {
-  const editedRoutes = routes.filter((r, i) => i !== 0);
+  const editedRoutes = routes.filter((r) => r.name === "Home");
 
   return (
     <SafeAreaView style={styles.container}>

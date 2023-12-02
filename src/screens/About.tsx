@@ -7,7 +7,7 @@ import { NavBar } from "../components/navigation/NavBar";
 import { routes } from "../navigation/routes";
 
 export const AboutScreen = ({ navigation }: StackScreenProps) => {
-  const editedRoutes = routes.filter((r, i) => i !== 3);
+  const editedRoutes = routes.filter((r) => r.name === "About");
 
   return (
     <SafeAreaView style={styles.container}>

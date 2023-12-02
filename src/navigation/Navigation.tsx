@@ -8,13 +8,16 @@ const Stack = createNativeStackNavigator();
 export const Navigation = () => {
   return (
     <NavigationContainer>
-    <Stack.Navigator initialRouteName={"Home"} screenOptions={{headerShown: false}}>
-      {routes.map((r, i) => (
-        <Stack.Screen key={i} name={r.name}>
-          {(props) => <r.component nameProps={r.name} {...props} />}
-        </Stack.Screen>
-      ))}
-    </Stack.Navigator>
+      <Stack.Navigator
+        initialRouteName={"Home"}
+        screenOptions={{ headerShown: false }}
+      >
+        {routes.map((r, i) => (
+          <Stack.Screen key={i} name={r.name}>
+            {(props) => <r.component nameProps={r.name} {...props} />}
+          </Stack.Screen>
+        ))}
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };
