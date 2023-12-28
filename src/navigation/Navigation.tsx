@@ -1,9 +1,13 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
-import { routes } from "./routes";
+import { RootStackParamsList } from "./StackScreenProps";
+import { HomeScreen } from "../screens/Home";
+import { MeditationScreen } from "../screens/Meditation";
+import { CommunityScreen } from "../screens/Community";
+import { AboutScreen } from "../screens/About";
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamsList>();
 
 export const Navigation = () => {
   return (
@@ -12,11 +16,10 @@ export const Navigation = () => {
         initialRouteName={"Home"}
         screenOptions={{ headerShown: false }}
       >
-        {routes.map((r, i) => (
-          <Stack.Screen key={i} name={r.name}>
-            {(props) => <r.component nameProps={r.name} {...props} />}
-          </Stack.Screen>
-        ))}
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Meditation" component={MeditationScreen} />
+        <Stack.Screen name="Community" component={CommunityScreen} />
+        <Stack.Screen name="About" component={AboutScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
