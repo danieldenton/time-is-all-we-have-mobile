@@ -6,6 +6,7 @@ import { HomeScreen } from "../screens/Home";
 import { MeditationScreen } from "../screens/Meditation";
 import { CommunityScreen } from "../screens/Community";
 import { AboutScreen } from "../screens/About";
+import { ContactScreen } from "../screens/Contact";
 
 const Stack = createNativeStackNavigator<RootStackParamsList>();
 
@@ -20,6 +21,7 @@ export const Navigation = () => {
         <Stack.Screen name="Meditation" component={MeditationScreen} />
         <Stack.Screen name="Community" component={CommunityScreen} />
         <Stack.Screen name="About" component={AboutScreen} />
+        <Stack.Screen name="Contact" component={ContactScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
