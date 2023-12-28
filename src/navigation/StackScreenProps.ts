@@ -6,3 +6,11 @@ export type StackScreenProps = {
   navigation: NativeStackNavigationProp<any>;
   route: RouteProp<ParamListBase, any>;
 };
+
+export type RootStackParamsList = {
+  Home: undefined
+  Meditation: undefined
+  Community: undefined
+  About: undefined
+  Contact: undefined
+}
