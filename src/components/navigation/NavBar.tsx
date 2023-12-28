@@ -2,12 +2,12 @@ import React from "react";
 import { View } from "react-native";
 import { styles } from "../../styles";
 import { NavButtons } from "./NavButtons";
-import { NavButtonProps } from "./NavButtonProps";
+import { navProps } from "../../navigation/navProps";
 
-export const NavBar = ({ navigation, routes }: NavButtonProps) => {
+export const NavBar = ({ navigation }: navProps) => {
   return (
     <View style={styles.navButtonContainer}>
-      <NavButtons navigation={navigation} routes={routes} />
+      <NavButtons navigation={navigation} />
     </View>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { Text, SafeAreaView, TouchableOpacity, Linking } from "react-native";
-import { StackScreenProps } from "../navigation/StackScreenProps";
+import { StackScreenProps } from "../navigation/RootStackParamsList";
 import { styles } from "../styles";
 import { NavBar } from "../components/navigation/NavBar";
 import { routes } from "../navigation/routes";

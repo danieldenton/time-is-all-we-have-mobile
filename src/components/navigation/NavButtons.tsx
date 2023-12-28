@@ -1,14 +1,12 @@
 import React from "react";
 import { TouchableOpacity, Text } from "react-native";
 import { styles } from "../../styles";
-import { NavButtonProps } from "./NavButtonProps";
+import { navProps } from "../../navigation/navProps";
 
-export const NavButtons = ({ navigation, routes }: NavButtonProps) => {
-  const routeNames = routes.map((route) => {
-      return route.name;
-    });
+export const NavButtons = ({ navigation }: navProps) => {
+  const routes: string[] = ["Home", "Meditation", "Community", "About", "Contact"]
 
-  const navButtons = routeNames.map((name, i) => {
+  const navButtons = routes.map((name, i) => {
     return (
       <TouchableOpacity
         onPress={() => {
