@@ -9,7 +9,7 @@ export const MeditationScreen = ({ navigation }: navProps) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <NavBar navigation={navigation} />
+      <NavBar navigation={navigation} screenName={"Meditation"}/>
       <Text style={styles.textHeader}>MEDITATION SCREEN</Text>
       <StatusBar style="auto" />
     </SafeAreaView>

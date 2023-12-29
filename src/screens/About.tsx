@@ -9,7 +9,7 @@ export const AboutScreen = ({ navigation }: navProps) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <NavBar navigation={navigation} />
+      <NavBar navigation={navigation} screenName={"About"}/>
       <Text style={styles.textHeader}>ABOUT</Text>
       <StatusBar style="auto" />
     </SafeAreaView>

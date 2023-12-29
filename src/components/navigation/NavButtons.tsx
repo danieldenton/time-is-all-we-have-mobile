@@ -3,10 +3,11 @@ import { TouchableOpacity, Text } from "react-native";
 import { styles } from "../../styles";
 import { navProps } from "../../navigation/navProps";
 
-export const NavButtons = ({ navigation }: navProps) => {
+export const NavButtons = ({ navigation, screenName }: navProps) => {
   const routes: string[] = ["Home", "Meditation", "Community", "About", "Contact"]
+  const editedRoutes = routes.filter((route) => route !== screenName)
 
-  const navButtons = routes.map((name, i) => {
+  const navButtons = editedRoutes.map((name, i) => {
     return (
       <TouchableOpacity
         onPress={() => {

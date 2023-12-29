@@ -10,7 +10,7 @@ export const ContactScreen = ({ navigation }: navProps) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <NavBar navigation={navigation} />
+      <NavBar navigation={navigation} screenName={"Contact"}/>
       <Text style={styles.textHeader}>Daniel Denton</Text>
       <Text style={styles.textSubHeader}>Software Developer</Text>
       <Text style={styles.text}>DanielMDenton@gmail.com</Text>
