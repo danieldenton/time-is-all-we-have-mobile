@@ -1,16 +1,16 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { Text, SafeAreaView, TouchableOpacity, Linking } from "react-native";
-import { navProps } from "../navigation/navProps";
+import { ContactNavProps } from "../navigation/RootStackParamsList";
 import { styles } from "../styles";
 import { NavBar } from "../components/navigation/NavBar";
 
 
-export const ContactScreen = ({ navigation }: navProps) => {
+export const ContactScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <NavBar navigation={navigation} screenName={"Contact"}/>
+      <NavBar />
       <Text style={styles.textHeader}>Daniel Denton</Text>
       <Text style={styles.textSubHeader}>Software Developer</Text>
       <Text style={styles.text}>DanielMDenton@gmail.com</Text>

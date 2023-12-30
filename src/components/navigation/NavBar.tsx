@@ -1,13 +1,20 @@
 import React from "react";
 import { View } from "react-native";
 import { styles } from "../../styles";
-import { NavButtons } from "./NavButtons";
-import { navProps } from "../../navigation/navProps";
+import { NavButton } from "./NavButtons";
+import { NavProps } from "../../navigation/NavProps";
 
-export const NavBar = ({ navigation, screenName }: navProps) => {
+export const NavBar = ({ route, navigation}: NavProps) => {
+  // const routes = [Home, Medtation,]
+
+  // const navButtons = routes.map((screen, idx) => {
+  //   return (<NavButton route={screen} navigation={navigation}/>
+  //   )
+  // })
+
   return (
     <View style={styles.navButtonContainer}>
-      <NavButtons navigation={navigation} screenName={screenName} />
+      
     </View>
   );
 };
