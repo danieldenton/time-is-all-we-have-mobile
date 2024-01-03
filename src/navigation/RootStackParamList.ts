@@ -1,4 +1,4 @@
-export type StackParamList = {
+export type RootStackParamList = {
   Home: undefined;
   Meditation: undefined;
   Community: undefined;

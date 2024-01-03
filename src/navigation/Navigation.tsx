@@ -1,14 +1,14 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
-import { StackParamList } from "./StackParamList";
+import { RootStackParamList } from "./RootStackParamList";
 import { HomeScreen } from "../screens/Home";
 import { MeditationScreen } from "../screens/Meditation";
 import { CommunityScreen } from "../screens/Community";
 import { AboutScreen } from "../screens/About";
 import { ContactScreen } from "../screens/Contact";
 
-const Stack = createNativeStackNavigator<StackParamList>();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export const Navigation = () => {
   return (
