@@ -11,14 +11,6 @@ import { navbarRoutes, footerNavRoutes } from "./routes";
 const Stack = createNativeStackNavigator();
 
 export const Navigation = () => {
-
-  const routes = navbarRoutes.concat(footerNavRoutes)
-
-  const stackScreens = routes.map((route, idx) => {
-    <Stack.Screen key={idx} name={route.name}>
-{(props) => <route.component nameProps={route.name} {...props}} 
-    </Stack.Screen>
-  })
   return (
     <NavigationContainer>
       <Stack.Navigator
