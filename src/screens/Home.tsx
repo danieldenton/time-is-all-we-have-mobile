@@ -8,7 +8,7 @@ import { NavBar } from "../components/navigation/NavBar";
 export const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <NavBar />
+      {/* <NavBar navigation={navigation} /> */}
       <Text style={styles.textHeader}>TIME IS ALL WE HAVE</Text>
       <StatusBar style="auto" />
     </SafeAreaView>

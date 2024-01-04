@@ -8,7 +8,7 @@ export const AboutScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <NavBar />
+      {/* <NavBar /> */}
       <Text style={styles.textHeader}>ABOUT</Text>
       <StatusBar style="auto" />
     </SafeAreaView>

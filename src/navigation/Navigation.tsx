@@ -1,16 +1,24 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
-import { RootStackParamList } from "./RootStackParamList";
 import { HomeScreen } from "../screens/Home";
 import { MeditationScreen } from "../screens/Meditation";
 import { CommunityScreen } from "../screens/Community";
 import { AboutScreen } from "../screens/About";
 import { ContactScreen } from "../screens/Contact";
+import { navbarRoutes, footerNavRoutes } from "./routes";
 
-const Stack = createNativeStackNavigator<RootStackParamList>();
+const Stack = createNativeStackNavigator();
 
 export const Navigation = () => {
+
+  const routes = navbarRoutes.concat(footerNavRoutes)
+
+  const stackScreens = routes.map((route, idx) => {
+    <Stack.Screen key={idx} name={route.name}>
+{(props) => <route.component nameProps={route.name} {...props}} 
+    </Stack.Screen>
+  })
   return (
     <NavigationContainer>
       <Stack.Navigator

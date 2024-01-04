@@ -9,7 +9,7 @@ export const CommunityScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <NavBar />
+      {/* <NavBar /> */}
       <Text style={styles.textHeader}>COMMUNITY SCREEN</Text>
       <StatusBar style="auto" />
     </SafeAreaView>

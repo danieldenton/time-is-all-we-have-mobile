@@ -1,20 +1,25 @@
 import React from "react";
-import { View } from "react-native";
+import { TouchableOpacity, Text } from "react-native";
 import { styles } from "../../styles";
-import { NavButton } from "./NavButtons";
-import { NavProps } from "../../navigation/navTypes";
+import { StackScreenProps} from "../../navigation/StackScreenProps";
 
-export const NavBar = ({ route, navigation}: NavProps) => {
-  // const routes = [Home, Medtation,]
 
-  // const navButtons = routes.map((screen, idx) => {
-  //   return (<NavButton route={screen} navigation={navigation}/>
-  //   )
-  // })
+export const NavBar = ({ navigation, route }: StackScreenProps) => {
 
-  return (
-    <View style={styles.navButtonContainer}>
+    const routes = ["Home", "Mediation", "Community"]
+
+    const buttons = routes.map((route) => {
+        return (
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate(route);
+            }}
+            style={styles.buttons}
+          >
+            <Text style={styles.buttonFont}>Home</Text>
+          </TouchableOpacity>
+        );
+      })
       
-    </View>
-  );
+  return { buttons };
 };
