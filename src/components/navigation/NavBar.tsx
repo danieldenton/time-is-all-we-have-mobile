@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import { styles } from "../../styles";
 import { NavButton } from "./NavButtons";
-import { NavProps } from "../../navigation/NavProps";
+import { NavProps } from "../../navigation/navTypes";
 
 export const NavBar = ({ route, navigation}: NavProps) => {
   // const routes = [Home, Medtation,]

@@ -1,9 +1,9 @@
 import React from "react";
 import { TouchableOpacity, Text } from "react-native";
 import { styles } from "../../styles";
-import { NavProps } from "../../navigation/NavProps";
+import { ScreenNavigationProp, ScreenRouteProp } from "../../navigation/navTypes";
 
-export const NavButton = ({ route, navigation }: NavProps) => {
+export const NavButton = ({ navigation }: ScreenNavigationProp) => {
   
     return (
       <TouchableOpacity
